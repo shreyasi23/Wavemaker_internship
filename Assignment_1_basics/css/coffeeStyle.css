@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    background-color: #1de5b3;
+    height: 57px;
+}
+
+.navbar ul{
+    overflow:auto;
+}
+
+.navbar h1{
+    float:left;
+    margin: 14px 20px;
+    color: #006d5b;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar li{
+    float: right;
+    margin: 19px 15px;
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #006d5b;
+    padding: 8px 10px;
+}
+
+.navbar ul li a:hover, .navbar ul li a:active{
+    background-color: #006d5b;
+    color: white;
+    border-radius: 3px;
+}
+
+#instaCoffee{
+    float: right;
+    height: 372px;
+    width: 718px;
+    padding: 30px 179px 8px 7px;
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    color: #1de5b3;
+    padding: 30px 0px 8px 214px;
+    font-size: 40px;
+}
+
+.coffeeIM h3{
+    font-family: 'Nunito', sans-serif;
+    color: #006d5b;
+    padding: 30px 0px 8px 214px;
+    font-size: 26px;
+}
+
+.coffeeIM ul{
+    padding-left: 234px;
+}
+
+.coffeeIM li{
+    font-family: 'Nunito', sans-serif;
+    color: #161414;
+    list-style-type: disc;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#note{
+    font-family: 'Nunito', sans-serif;
+    color: #006d5b;
+    font-size: 16px;
+    line-height: 56px;
+    padding-left: 212px; 
+}
+
+#method{
+    font-family: 'Nunito', sans-serif;
+    color: #161414;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0px 778px 8px 214px;
+}
+
+span{
+    font-family: 'Nunito', sans-serif;
+    color: #161414;
+    font-size: 18px;
+    padding: 0px 2px 8px 214px;
+}
+
+#feedlink{
+    text-decoration:none;
+    color: #006d5b;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#feedlink:hover{
+    color: #1de5b3;
+}
+
+footer h3{
+    font-family: 'Nunito', sans-serif;
+    color: #006d5b;
+    padding: 30px 0px 8px 0px;
+    font-size: 26px;
+}
+
+.socialmedia{
+    height:30px;
+    width:30px;
+    padding-left:5px;
+    margin-left: 54px; 
+    margin-right: -51px;
+    margin-bottom: 25px;
+}
+
+#insta{
+    height: 37px;
+    width: 40px;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-bottom: 21px;    
+}
+
+#mail{
+    height: 42px;
+    width: 40px;
+    padding-left:5px; 
+    padding-right:5px;
+    margin-bottom: 16px;
+}
+
+#wa{
+    margin-left: -7px;
+}
+
+footer{
+    padding-left: 214px;
+}
+

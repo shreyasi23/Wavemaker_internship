@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+/* col width and row */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	height: 600px;
+}
+
+.col{
+	display: inline-block;	
+	margin: 0 auto;
+	padding: 0;
+}
+
+.col-1{
+	width: 8.3333%;
+}
+
+.col-2{
+	width:16.66666%;
+}
+
+.col-3{
+	width: 25%;        /* (12/100)*3 */
+}
+
+.col-4{
+	width: 33.3332%;
+}
+
+.col-5{
+	width: 41.6665%;
+}
+
+.col-6{
+	width:50%;
+}
+
+.col-7{
+	width:58.3331%;
+}
+
+.col-8{
+	width:66.6664%;
+}
+
+.col-9{
+	width:75%;
+}
+
+.col-10{
+	width: 83.333%;
+}
+
+.col-11{
+	width:91.6663%;
+}
+
+.col-12{
+	width: 100%;
+}
+/* End of col width and row*/
+
+/* Header style */
+header{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    background-color: #232323;
+}
+
+.brand_logo{
+    /* border: 2px solid green; */
+    text-align: right;
+    color: grey;
+}
+
+.brand_logo:hover{
+    cursor: pointer;
+}
+
+.navi{
+    /* border: 2px solid red; */
+}
+
+.navi ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 1rem;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
+.navi a:hover, .navi a.active{
+    background-color: black;
+    color: white;
+}
+
+.search_box{
+    /* border: 2px solid #0078d4; */
+    display: flex;
+}
+
+.search_box div{
+    /* border: 2px solid yellow; */
+    width: 11rem;
+    margin-right: 6px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.search_box button{
+    padding: 4px 6px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+}
+/* End of Header style */
+
+/* Page content section row 1 style */
+.section1{
+    /* border: 2px solid black; */
+    height: 46rem;
+}
+
+.section1 .part1{
+    /* border: 2px solid green; */
+}
+
+.section1 .boxes{
+    border: 2px solid #f0f0f0;
+    margin: 11px;
+    border-radius: 8px;
+}
+
+.section1 #box1{
+    height: 14rem;
+}
+
+.section1 .title_space{
+    /* border: 2px solid red; */
+    background-color: #f0f0f0;
+    padding: 5px 9px;
+}
+
+/* .section table tr{
+    border: 2px solid grey;
+} */
+
+.section1 .tuples{
+    border: 1px solid #f0f0f0;
+    padding: 8px;
+}
+
+.box_content{
+    padding: 17px;
+    text-align: left;
+}
+
+/* .box_content button{
+    margin-top: 13px;
+    padding: 5px 8px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: white ;
+} */
+
+.btn_style{
+    margin-top: 13px;
+    padding: 5px 8px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: white ;
+}
+
+#button_box {
+    display: flex;
+    /* border: 2px solid black; */
+    width: 13rem;
+}
+
+#button_box #btn1{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#button_box #btn2{
+    border-radius: 0px;
+}
+
+#button_box #btn3{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.section1 .part2{
+    /* border: 2px solid red; */
+}
+
+#message{
+    /* border: 2px solid black; */
+    width: 36rem;
+    margin: auto;
+    margin-top: 11px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ceffbc;
+    color: green;
+}
+
+#message p i{
+    margin-left: 8rem;
+}
+
+.big_box{
+    /* border:2px solid black; */
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    height: 11rem;
+}
+
+.big_box p{
+    margin: 5px;
+}
+
+.about_post{
+    /* border: 2px solid #0078d4; */
+    width: 20rem;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.about_post span{
+    margin: 5px;
+    color: #0078d4; 
+}
+
+#read_more{
+    display:block;
+}
+
+.post_btns{
+    /* border: 2px solid red; */
+    display:inline-block;
+    margin-left: 8rem;
+}
+
+.post_btns button{
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 2px;
+    padding:2px;
+}
+
+hr{
+    width: 36rem;
+    margin: auto;
+}
+
+.part3{
+    /* border: 2px solid black; */
+}
+
+#box4 form input{
+    display: block;
+    margin-bottom: 8px;
+    padding: 4px 79px 4px 10px; 
+}
+
+#title_6{
+    font-size: 1rem;
+    background-color: white;
+}
+
+#flex_box{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+#flex_box div p{
+    text-align: center;
+}
+
+.arrow i{
+    font-size: 30px;
+}
+
+#line1{
+    font-size: 30px;
+}
+
+#line2{
+    color: white;
+}
+
+.color_bars{
+    padding: 8px;
+    color: white;
+}
+
+.color_bars #green{
+    display: block;
+    border-radius: 6px;
+    background-color: green;
+    width: 17rem; 
+    padding-left: 8px;
+}
+
+.color_bars #blue{
+    display: block;
+    border-radius: 6px;
+    background-color: lightskyblue;
+    width: 15rem; 
+    padding-left: 8px;
+}
+
+.color_bars #yellow{
+    display: block;
+    border-radius: 6px;
+    background-color: #f3ad02;
+    width: 8rem; 
+    padding-left: 8px;
+}
+
+.color_bars #red{
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgb(230, 0, 0);
+    width: 6rem; 
+    padding-left: 8px;
+}
+
+
+
+
+
+
+/* End of Page content section row 1 style */
+
+/* Page content section row 2 style */
+.section2{
+    /* border: 2px solid black; */
+    background-color: #e2e2e2;
+    height: 24rem;
+}
+
+#cont{
+    /* border: 2px solid black; */
+    width: 68rem;
+    height: 24rem;
+    margin:auto;
+}
+
+#cont .cont2{
+    /* border: 2px solid red; */
+    padding: 10px;
+    width:16rem;
+    height: 15rem;
+    margin: 4rem 0.4rem;
+}
+
+.btn_style_2{
+    border-color: gray;
+    background-color: #f2f2f2;
+}
+
+#cont_f{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 14rem;
+    margin-top: 10px;
+}
+
+#cont_f div{
+    border: 2px solid #f2f2f2;
+    width: 6rem;
+    height: 5rem;
+}
+
+#cont_f div p{
+    margin-top: 32%;
+    margin-left: 25%;
+}
+
+/* End of Page content section row 2 style */
+
+/* footer style */
+footer p{
+    text-align: center;
+}
+
+footer #footer_l1{
+    color:#0078d4;
+    padding: 25px 0px 6px 0px;
+}
+
+footer #footer_l2{
+    padding-bottom: 12px;
+}
+/* End of footer style */

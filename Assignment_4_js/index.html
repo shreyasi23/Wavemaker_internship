@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="todoStyle.css">
+    </head>
+    <body>
+        <div id="header" class="container">
+            <h2>List of To-do tasks: <span id="noTask"></span></h2>
+            <div id="status_box">
+                <h4>Done: <span id="d_task">0</span></h4>
+                <h4>To do: <span id="p_task"></span></h4>
+            </div>
+            <div id="input_box">
+                <input type="text" id="task" placeholder="Enter a task..">
+                <span onclick="addTask()" class="addBtn">Add Activity</span>
+            </div>
+        </div>
+        <ul id="my_list" class="container"></ul>
+        <script src="todoLogic.js"></script>
+    </body>
+</html>

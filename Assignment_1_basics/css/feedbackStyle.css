@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #1de5b3;
+    height: 57px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar h1{
+    font-family: 'Nunito', sans-serif;
+    color:#006d5b;
+    float: left;
+    margin: 14px 20px;
+}
+
+.navbar li{
+    float: right;
+    list-style: none;
+    margin: 19px 15px;
+}
+
+.navbar a{
+    font-family: 'Nunito', sans-serif;
+    color:#006d5b;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.navbar a:hover, .navbar a.active{
+    background-color:#006d5b;
+    color:white;
+    border-radius: 3px;
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    color:#1de5b3;
+    font-size: 40px;
+    padding: 30px 0px 8px 214px;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    color:#161414;
+    font-size: 18px;
+    padding: 0px 0px 41px 214px;
+}
+
+label{
+    font-family: 'Nunito', sans-serif;
+    color:#161414;
+    font-size: 18px;
+    padding: 30px 72px 8px 214px;
+    margin: 12px 828px 8px -2px;
+}
+
+input[type = text]{
+    width: 35%;
+    padding: 8px 20px;
+    margin: 8px 0px 32px 210px;
+    display: inline-block;
+    border: 1px solid #006d5b;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 35%;
+    padding: 8px 20px;
+    margin: 8px 0px 32px 210px;
+    display: inline-block;
+    border: 1px solid #006d5b;
+    border-radius: 4px;
+}
+
+input[type = email]{
+    width: 35%;
+    padding: 8px 20px;
+    margin: 8px 553px 32px 210px;
+    display:inline-block;
+    border: 1px solid #006d5b;
+    border-radius: 4px;
+}
+
+input[type = reset]{
+    font-family: 'Nunito', sans-serif;
+    color:white;
+    background-color: #006d5b;
+    font-size: 16px;
+    padding: 4px 2px;
+    margin: 10px -196px 32px -540px;
+    height: 32px;
+    width: 84px;
+    border: none;
+    border-radius: 4px;
+}
+
+[type = submit]{
+    font-family: 'Nunito', sans-serif;
+    color:white;
+    background-color: #006d5b;
+    font-size: 16px;
+    padding: 4px 2px;
+    margin: 10px 0px 32px 210px;
+    height: 32px;
+    width: 84px;
+    border: none;
+    border-radius: 4px;
+}
+
+[type = submit]:hover, input[type = reset]:hover{
+    background-color: #1de5b3;
+    color:#161414;
+}
+
+/* #Ip1{
+    height: 21px;
+    width: 338px;
+    border-radius: 6px;
+    margin: 0px 5px 5px 10px;
+} */
+
+/* #Ip2{
+    height: 21px;
+    width: 338px;
+    border-radius: 6px;
+    margin: 0px 5px 5px 13px;
+}
+
+.btn{
+    height: 10px;
+    width: 10px;
+    background-color: #006d5b;
+    color: white;
+}
+
+.btn:hover{
+    background-color:#1de5b3;
+    color:#006d5b;
+} */

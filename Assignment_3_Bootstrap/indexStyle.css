@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Arvo', serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.section-light{
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+}
+
+.section-light .section_title{
+    color: cyan;
+    text-align: center;
+    font-family:'Poppins', sans-serif !important;
+    font-weight: 700;
+    font-size: 16px !important;
+}
+
+.section-light .section_heading{
+    text-align: center;
+    font-weight: 700;
+    width: 33rem;
+    margin: auto;
+}
+
+.section_margin_top{
+    margin-top: 5rem;
+    /* height: 55rem; */
+}
+
+/* Navbar style */
+.navbar-header{
+    width:100%;
+}
+.navbar-brand span {
+    text-shadow: 0 1px 0 rgb(255 255 255 / 25%);
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+}
+
+.navbar-header #nav_items{
+    display: inline-block;
+}
+
+.navbar-nav{
+    width: 42rem;
+    margin: auto;
+    float:none;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar-nav li a{
+    color: white !important;
+}
+
+.nabar-nav li a:hover, .navbar-nav li.active{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color: #222222
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #323232;
+}
+
+#navBtn button{
+    position: relative;
+    left: 11rem;
+    background-color: aqua;
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+}
+
+#navBtn button:hover{
+    background-color: rgb(0, 161, 161);
+}
+
+
+/* End of Navbar style */
+
+/* Hero section style */
+#Hero{
+    background-color: #222222;
+    height: 90vh;
+}
+
+#hero_content{
+    display: flex;
+    height: 90vh;
+}
+
+#text{
+    color: white;
+    margin-top: 8rem;
+    font-size: 16px !important;
+}
+
+img{
+    vertical-align: middle;
+    height: 54.2rem;
+}
+
+#text p{
+    padding-right: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.btn-style {
+    border: 1px solid cyan;
+    border-radius: 4px;
+    background-color: #222222;
+    color: cyan;
+    font-family: 'Poppins', sans-serif !important;
+    padding: 1rem 3rem;
+}
+
+.btn-style:hover{
+    border-color: rgb(0, 161, 161);
+    color:rgb(0, 161, 161);
+}
+/* End of hero section style */
+
+/* Services section style */
+#services{
+    margin-top: 5rem;
+    height: 55rem;
+}
+
+.cap_style h4{
+    text-align:center;
+    font-weight:700;
+    margin-top: 50px;
+}
+
+.cap_style p{
+    text-align:center;
+    font-family:'Poppins', sans-serif !important;
+    padding: 2rem;
+}
+
+.icon_style{
+    left: 24%;
+    top: 24%;
+    font-size: 4rem;
+    color: white;
+}
+
+.pic_style {
+    width: 8rem;
+    height: 8rem;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin: auto;
+    line-height: 1.42857143;
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+}
+
+#plan{
+    background-color: cyan;
+    border: 1px solid cyan;
+    box-shadow: 2px 12px 26px #00ffff8c;
+}
+
+#globe{
+    background-color:aquamarine;
+    border: 1px solid aquamarine;
+    box-shadow: 2px 12px 26px #7fffd487;;
+}
+
+#star{
+    background-color:orange;
+    border: 1px solid orange;
+    box-shadow: 2px 12px 26px #ffa50059;
+}
+
+#service_btn{
+    background-color: #fafafa;
+    display: block;
+    margin:auto;
+    margin-top:4rem;
+}
+
+/* End of Services section style */
+
+/* Presentation section style*/
+.cap_style2 h4{
+    font-weight: 700;
+}
+
+.pic_style2{
+    width: 34rem;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.heading_content_space{
+    margin-top: 6rem;
+}
+
+#ppt_r_2{
+    margin-top: 3rem;
+}
+
+#presentation{
+    height: 83rem;
+}
+
+.pic_style3{
+    width: 25rem;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.pad_t{
+    padding: 0 !important;
+}
+
+.margin_t{
+    margin-top: 25px !important;
+}
+/* End of presentation section style*/
+
+/* customer review section style */
+
+.review{
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 5px 11px #80808070;
+    padding: 32px;
+    padding-bottom: 0;
+}
+
+.cust_info h4{
+    font-weight: 700;
+}
+
+.decoration{
+    overflow: hidden;
+    position: absolute;
+    top: 20rem;
+    left: 40rem;
+    height: 7.3rem;
+    width: 8.5rem;
+}
+
+.review img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 34px;
+    padding: 1px;
+}
+
+.review .cust_info{
+    display: flex;
+}
+
+.rate_spacer span{
+    margin-right: 2px;
+    font-size: 16px;
+}
+
+.star_on{
+    color: orange;
+}
+
+.star_off{
+    color:#323232;
+}
+
+.review_text{
+    font-family: 'Poppins';
+    margin-top: 2rem;
+    line-height: 25px;
+}
+
+#review_box{
+    margin-bottom: 7rem;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+    background-color: #18ffff24;
+}
+
+.smc {
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    bottom: 2rem;
+    left: 33rem;
+}
+
+.bmc{
+    height: 10rem;
+    width: 10rem;
+}
+
+.move{
+    margin-top: 10%;
+    text-align:center;
+}
+
+.move div{
+    border: 2px solid #bcbcbc;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 39px;
+}
+
+.move div span{
+    padding-top: 20px;
+    color: #bcbcbc;
+}
+
+/* End of customer review section style */
+
+/* Contact section style */
+#contact_section{
+    height: 60vh;
+    background-color: #1d2c44;
+    color: white;
+}
+
+#contact_info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_info p{
+    width: 67rem;
+    margin: 3rem;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+}
+
+#contact_form{
+    width: 86rem;
+    height: 5rem;
+    border-radius: 26px;
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.form_style{
+    height: 4rem;
+    position: relative;
+    left: 2rem;
+    top: 0.5rem;
+    background-color: #fafafa;
+    border:none;
+    padding-left: 1rem;
+}
+#contact_form input[type=email]{
+    width: 36rem;
+    border-right:2px solid #bcbcbc;
+}
+
+#contact_form input[type=text]{
+    width: 33rem;
+}
+
+#contact_form button{
+    border: 2px solid cyan;
+    width: 13.7rem;
+    height: 4rem;
+    background-color: cyan;
+    border-radius: 19px;
+    font-weight: 700;
+}
+
+#contact_form button:hover{
+    border-color: rgb(0, 161, 161);
+}
+
+/* End of contact section style */
+
+/* Footer style */
+footer{
+    border-top:2px solid #323232;
+    height: 6rem;
+    background-color: #222222;
+    color: #b5afd6;
+}
+
+footer .container{
+    margin-top: 2rem;
+}
+
+footer .row p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Poppins';
+}
+
+#go_up{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: teal;
+}
+
+#go_up span{
+    padding-top: 0.6rem;
+    font-size: 18px;
+}
+
+.col-sm-3 i{
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+#fs1{
+    height: 70vh;
+    background-color: #222222;
+}
+
+.fl_style ul{
+list-style: none;
+line-height: 4rem;
+}
+
+.fl_style h4, .fl_style h3{
+    color: white;
+}
+
+.fl_style span{
+    color: grey;
+}
+
+.fl_style p{
+    color: #b5afd6;
+}
+
+.fl_style a{
+    text-decoration: none;
+    color: #b5afd6;
+}
+
+.fl_style a:hover{
+    color: white;
+}
+
+/* End of footer style */

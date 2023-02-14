@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: #1de5b3;
+    height: 73px;
+}
+
+#menu_items {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 392px;
+    right: 87px;
+    top: 9px;
+    display: inline-block;
+}
+
+#navbar h1 {
+    display:inline-block;
+    position: absolute;
+    left: 109px;
+    top: 10px;
+    color: #006d5b;
+    font-size: 38px;
+    margin-right: 128px;
+    /* font-family: 'Tiro Telugu', serif; */
+    /* font-family: 'Gentium Plus', serif; */
+    font-family: 'Nunito', sans-serif;
+}
+#navbar li{
+    /* float: right;  */
+    list-style: none;
+    margin: 19px 15px;
+    display: inline-block;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #006d5b;
+    /* font-family: 'Tiro Telugu', serif; */
+    /* font-family: 'Gentium Plus', serif; */
+    font-family: 'Nunito', sans-serif;
+    padding: 8px 10px;
+}
+
+#navbar a:hover, #navbar a.active{
+    background-color:#006d5b;
+    color: white;
+    border-radius: 17px;
+}
+
+#hero_img{
+    /* border: 2px solid black; */
+    background-image: url(../Images/micheile-dot-com-sclZndD-1HQ-unsplash.jpg);
+    height: 500px;
+}
+
+#hero_img p {
+    color: white;
+    width: 592px;
+    margin: auto;
+    border: 6px solid white;
+    text-align: center;
+    font-size: 92px;
+    position: relative;
+    top: 180px;
+    padding: 33px;
+}
+
+#homeText{
+    color: #161414;
+    padding: 8px 214px 0px 214px;
+    font-size: 18px;
+    text-align: justify;
+    /* font-family: 'Tiro Telugu', serif; */
+    /* font-family: 'Gentium Plus', serif; */
+    font-family: 'Nunito', sans-serif;
+    word-spacing: 3px; 
+
+}
+
+#homePagePara{
+    /* border: 2px solid black; */
+    margin-top: 30px;
+}
+
+.diylink{
+    text-decoration:none;
+    color: #006d5b;
+    font-size: 18px;
+    /* font-family: 'Tiro Telugu', serif; */
+    /* font-family: 'Gentium Plus', serif; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.diylink:hover{
+    color: #1de5b3;
+} 
+
+#homeLink{
+    /* padding: 10px 0px 0px 219px; */
+    font-size: 18px;
+    color: #006d5b;
+}
+
+#image_box{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 793px;
+}
+
+#image_box img{
+    /* display:inline-block; */
+    height:300px;
+    width: 365px;
+    border-radius: 26px;
+}
+
+.link_style{
+    margin-top: 10px;
+    text-align: center;
+}
+

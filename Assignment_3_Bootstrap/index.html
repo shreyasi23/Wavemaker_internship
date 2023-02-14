@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 - Bootstrap</title>
+
+        <!--Font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="indexStyle.css">
+
+        <!-- Font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a class="navbar-brand" href="#">
+                                    <span><strong>BRAND.</strong></span>
+                                </a>
+                            </div>
+                            
+                            <div id="nav_items" class="col-sm-6">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#presentation">Work</a></li>
+                                </ul>
+                            </div>
+        
+                            <div id="navBtn" class="col-sm-3">
+                                <button type="button" class="btn navbar-btn"><strong>Contact Now</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+
+        <!--Hero section-->
+        <div id="Hero">
+            <div id="hero_content" class="container">
+                <div class="row">
+                    <div id="text" class="col-sm-7">
+                        <h1><strong>Brand business with reliable strategies</strong></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ducimus, deleniti et voluptatem incidunt, accusantium maxime veritatis nihil omnis quasi officiis officia molestias sit vitae ea nisi qui. Non possimus mollitia accusantium earum in!</p>
+                        <button type="button" class="btn btn-style">View Project</button>
+                    </div>
+    
+                    <div id="image" class="col-sm-5">
+                        <img src="./Images/girl_hero.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services section-->
+        <div class="section-light">
+            <div class="container section_margin_top" id="services">
+                <p class="section_title">SERVICES</p>
+                <div>
+                    <h2 class="section_heading">Effective Services for Various Destinations</h2>
+                </div>
+                <div class="row heading_content_space">
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style" id="plan">
+                            <span class="glyphicon glyphicon-list-alt icon_style" aria-hidden="true"></span>
+                        </div>
+                        <div class="caption cap_style">
+                            <h4>Strategic Planning</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam at modi repellat quos quas!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style" id="globe">
+                            <span class="glyphicon glyphicon-globe icon_style" aria-hidden="true"></span>
+                        </div>
+                        <div class="caption cap_style">
+                            <h4>Trades & Stocks</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, officiis numquam maiores saepe assumenda dicta.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style" id="star">
+                            <span class="glyphicon glyphicon-star-empty icon_style" aria-hidden="true"></span>
+                        </div>
+                        <div class="caption cap_style">
+                            <h4>Audit & Assurance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nulla, voluptas harum earum mollitia magni!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-style" id="service_btn"><strong>Get Started</strong></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Presentation section -->
+        <div class="section-light" id="presentation">
+            <div class="container section_margin_top">
+                <p class="section_title">PRESENTATION</p>
+                <div>
+                    <h2 class="section_heading">Works That We Done Recently</h2>
+                </div>
+                <div class="row heading_content_space">
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style2">
+                            <img src="./Images/design.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Design</h4>
+                            <p>Design, Branding</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style2">
+                            <img src="./Images/promotion.png" alt="Advertising agency">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Promotion</h4>
+                            <p>Advertising, Agency</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style2">
+                            <img src="./Images/optimization.png" alt="Innnovative branding">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Optimization</h4>
+                            <p>Innovative, Branding</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="row" id="ppt_r_2">
+                    <div class="col-sm-4">
+                       <div class="thumbnail pic_style2">
+                            <img src="./Images/analysis.png" alt="Marketing analytics">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Analysis</h4>
+                            <p>Marketing, Analytics</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style2">
+                            <img src="./Images/dev.png" alt="Management growth">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Development</h4>
+                            <p>Management, Growth</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="thumbnail pic_style2">
+                            <img src="./Images/idea.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style2">
+                            <h4>Idea</h4>
+                            <p>Design, Branding</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Team section -->
+        <div class="section-light">
+            <div class="container section_margin_top">
+                <p class="section_title">OUR TEAM</p>
+                <div>
+                    <h2 class="section_heading">Team of Specialists</h2>
+                </div>
+                <div class="row heading_content_space">
+                    <div class="col-sm-3">
+                        <div class="thumbnail pic_style3">
+                            <img src="./Images/team1.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style">
+                            <h4 class="margin_t">Jessica White</h4>
+                            <p class="pad_t">Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="thumbnail pic_style3">
+                            <img src="./Images/uiux1.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style">
+                            <h4 class="margin_t">Emily Green</h4>
+                            <p class="pad_t">UI/UX Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="thumbnail pic_style3">
+                            <img src="./Images/dev2.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style">
+                           <h4 class="margin_t">Oliver Black</h4>
+                            <p class="pad_t">Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="thumbnail pic_style3">
+                            <img src="./Images/uiux2.png" alt="Design branding">
+                        </div>
+                        <div class="caption cap_style">
+                            <h4 class="margin_t">AnnaGrey</h4>
+                            <p class="pad_t">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer review section -->
+        <div class="section-light">
+            <div class="container">
+                <div class="row section_margin_top" id="review_box">
+                    <p class="section_title">CUSTOMER SAY</p>
+                    <div>
+                        <h2 class="section_heading">Ous Satisfied Customer Says</h2>
+                    </div>
+                    <div class="row heading_content_space">
+                        <div class="col-sm-1 move">
+                            <div>
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="review">
+                                <div class="row cust_info">
+                                    <img class ="col-sm-1" src="./Images/uiux1.png" alt="Design branding">
+                                    <div class="col-sm-7">
+                                        <h4>Linda Black</h4>
+                                        <h5>HR</h5>
+                                    </div>
+                                    <div class="col-sm-4 rate_spacer">
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="review_text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente facere inventore modi ad illo recusandae eaque iste ut fuga!</p>
+                                </div>
+                                <div class="rounded-circle smc"></div>
+                                <div class="decoration"><div class="rounded-circle bmc"></div></div>
+                            </div> 
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="review">
+                                <div class="row cust_info">
+                                    <img class ="col-sm-1" src="./Images/dev2.png" alt="Design branding">
+                                    <div class="col-sm-7">
+                                        <h4>Ben Orange</h4>
+                                        <h5>Web Developer</h5>
+                                    </div>
+                                    <div class="col-sm-4 rate_spacer">
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_on" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_off" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-star-empty star_off" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="review_text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente facere inventore modi ad illo recusandae eaque iste ut fuga!</p>
+                                </div>
+                                <div class="rounded-circle smc"></div>
+                                <div class="decoration"><div class="rounded-circle bmc"></div></div>
+                            </div> 
+                        </div>
+    
+                        <div class="col-sm-1 move" id="move_right">
+                            <div>
+                                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div id="contact_section">
+            <div class="container">
+                <div class="row section_margin_top">
+                    <div class="d-flex" id="contact_info">
+                        <h1>Have any questions? <strong>Contact Us</strong></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora voluptatum, aliquid, quidem rem ipsa vero excepturi expedita, officia praesentium sit itaque hic repellendus totam.</p>
+                        <div id="contact_form">                                
+                            <span><input class="form_style" type="email" placeholder="Email"></span>
+                            <span><input class="form_style" type="text" placeholder="Name"></span>
+                            <button class="form_style" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer section 1 -->
+        <div id="fs1">
+            <div class="container">
+                <div class="row section_margin_top">
+                    <div class="col-sm-6 fl_style">
+                        <h3><strong>Brand.</strong></h3>
+                        <p><span>Email:</span> brand@company.com</p>
+                        <p><span>Phone:</span> +7 123 456 78 90</p>
+                    </div>
+                    <div class="col-sm-2 fl_style">
+                        <h4><strong>Services</strong></h4>
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">SEO Service</a></li>
+                            <li><a href="#">Digital market</a></li>
+                            <li><a href="#">Content create</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 fl_style">
+                        <h4><strong>Customer Care</strong></h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">News & Articles</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 fl_style">
+                        <h4><strong>Privacy</strong></h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section 2-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <p class="col-sm-8">&copy;Copyright 2025 Brand. All Rights Reserved.</p>
+                    <div class="col-sm-3">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-youtube-play"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="col-sm-1">
+                        <div id="go_up">
+                            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
