@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="corridor_erd.erd">
+	<entities>
+		<data-source id="mysql8-186264a792f-694161454d657ca">
+			<entity id="1" name="blood_rel_table" fq-name="corridor_db.blood_rel_table" order="0" x="99" y="250">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="2" name="cycle_data" fq-name="corridor_db.cycle_data" order="1" x="406" y="76">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="3" name="department_table" fq-name="corridor_db.department_table" order="2" x="811" y="90">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="4" name="dependent_table" fq-name="corridor_db.dependent_table" order="3" x="108" y="441">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="5" name="designation_table" fq-name="corridor_db.designation_table" order="4" x="560" y="262">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="6" name="employee_data" fq-name="corridor_db.employee_data" order="5" x="584" y="404">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="7" name="employee_insurance_data" fq-name="corridor_db.employee_insurance_data" order="6" x="307" y="275">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="8" name="marital_status" fq-name="corridor_db.marital_status" order="7" x="837" y="427">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="9" name="nominee_data" fq-name="corridor_db.nominee_data" order="8" x="111" y="681">
+				<path name="corridor_db"/>
+			</entity>
+			<entity id="10" name="top_up_data" fq-name="corridor_db.top_up_data" order="9" x="583" y="69">
+				<path name="corridor_db"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="brt_fk" fq-name="corridor_db.dependent_table.brt_fk" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="eid_fk2" fq-name="corridor_db.employee_insurance_data.eid_fk2" type="fk" pk-ref="2" fk-ref="7"/>
+		<relation name="tud_fk" fq-name="corridor_db.top_up_data.tud_fk" type="fk" pk-ref="2" fk-ref="10"/>
+		<relation name="dpt_fk" fq-name="corridor_db.employee_data.dpt_fk" type="fk" pk-ref="3" fk-ref="6"/>
+		<relation name="nom_fk" fq-name="corridor_db.nominee_data.nom_fk" type="fk" pk-ref="4" fk-ref="9"/>
+		<relation name="dt_fk" fq-name="corridor_db.employee_data.dt_fk" type="fk" pk-ref="5" fk-ref="6"/>
+		<relation name="dep_fk" fq-name="corridor_db.dependent_table.dep_fk" type="fk" pk-ref="6" fk-ref="4"/>
+		<relation name="eid_fk1" fq-name="corridor_db.employee_insurance_data.eid_fk1" type="fk" pk-ref="6" fk-ref="7"/>
+		<relation name="ms_fk" fq-name="corridor_db.employee_data.ms_fk" type="fk" pk-ref="8" fk-ref="6"/>
+	</relations>
+</diagram>

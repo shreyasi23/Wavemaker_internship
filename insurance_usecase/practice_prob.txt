@@ -1,0 +1,91 @@
+create table cycle_data(
+insurance_id varchar(4),
+provider varchar(50) not null,
+cycle_start int unique,
+insurance_amt int not null,
+primary key(insurance_id)
+);
+
+create table top_up_data(
+top_up_amt int not null,
+monthly_deduct int not null,
+descriptn varchar(30),
+insurance_id varchar(4),
+primary key(insurance_id),
+constraint tud_fk foreign key insurance_id references cycle_data(insurance_id)
+);
+
+create table employee_data(
+emp_id varchar(2),
+emp_name varchar(50) not null,
+gender char(1) check(gender in("M","F","O")),
+ph_no bigint unique,
+email varchar(50) unique,
+emp_dob date not null,
+emp_dept varchar(4) not null,
+emp_desig varchar(4) not null,
+blood_grp varchar(3) not null check(blood_grp in("A+","A-","B+","B-","AB+","AB-","O+","O-")),
+marital_status varchar(3) not null,
+primary key(emp_id)
+);
+
+create table department_table(
+dept_name varchar(20),
+dept_code varchar(4)unique,
+primary key(dept_name),
+constraint dpt_fk foreign key dept_name references employee_data(emp_dept) on update cascade
+);
+create table designation_table(
+title varchar(20),
+title_code varchar(4)unique,
+primary key(title),
+constraint dt_fk foreign key title references employee_data(emp_desig)
+);
+
+create table marital_status(
+status varchar(8),
+status_code int unique,
+primary key(status),
+constraint ms_fk foreign key status references employee_data(marital_status)
+);
+
+create table dependent_table(
+dep_id varchar(2),
+dep_name varchar(50) not null,
+dep_dob date not null,
+dep_rel varchar(3) not null,
+emp_id varchar(2),
+primary key(dep_id),
+constraint dep_fk foreign key emp_id references employee_data(emp_id)
+);
+
+create table nominee_data(
+dep_id varchar(2),
+emp_id varchar(2),
+primary key(dep_id),
+constraint dep_fk foreign key emp_id references dependent_table(dep_id)
+);
+
+create table blood_rel_table(
+relation varchar(12),
+relation_code varchar(3) unique,
+primary key(relation),
+constraint brt_fk foreign key relation references dependent_table(dep_rel)
+);
+
+create table employee_insurance_data(
+emp_id varchar(2),
+insurance_id varchar(4),
+opt_in char(1) check(opt_in in("Y","N","P")),
+tpu_opt_in char(1) check(tpu_opt_in in("Y","N")),
+no_nominee int check(no_nominee between 1 and 5),
+top_up_amt int,
+insurance_sum int not null,
+primary key(emp_id),
+constraint eid_fk1 foreign key emp_id references dependent_table(emp_id),
+constraint eid_fk2 foreign key insurance_id references cycle_data(emp_id)
+);
+
+
+
+
