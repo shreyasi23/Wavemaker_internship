@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="indexStyle.css">
+    </head>
+    <body>
+        <div id="calciCont">
+            <h3>Calculator</h3>
+            <p>Enter numbers and click on the button for the operation you want to perform</p>
+            <div id="formCont">
+                <form action="CalculatorFunc" method="get">
+                    <label for="operand1">Enter first number:</label><br>
+                    <input type="text" name="operand1"><br><br>
+                    <label for="operand2">Enter second number:</label><br>
+                    <input type="text" name="operand2"><br><br>
+                    <div id="flexCont">
+                        <input class="calciBtns" type="submit" name="operator" value="+">
+                        <input class="calciBtns" type="submit" name="operator" value="-">
+                        <input class="calciBtns" type="submit" name="operator" value="*">
+                        <input class="calciBtns" type="submit" name="operator" value="/">
+                        <button class="calciBtns" id = "resetBtn" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
