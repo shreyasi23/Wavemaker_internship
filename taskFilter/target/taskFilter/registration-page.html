@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STXHS Science Fair 2023|Student Registration</title>
+    <link rel="stylesheet" href="regStyle.css">
+</head>
+<body>
+<div>
+    <h1>Science Fair 2023</h1>
+    <div>
+        <form action="regservlet" method="get">
+            <label>Student ID: </label>&nbsp;
+            <input type="text" name="stud_id"><br><br>
+            <label>Name: </label>&nbsp;
+            <input type="text" name="stud_name"><br><br>
+            <label>Roll no.: </label>&nbsp;
+            <input type="text" name="roll_no"><br><br>
+            <label>Class: </label>&nbsp;
+            <select name="class">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br>
+            <label>Section: </label>&nbsp;
+            <select name="section">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select><br><br>
+            <label>Project title: </label>&nbsp;
+            <input type="text" name="prj_title"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>
