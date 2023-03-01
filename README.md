@@ -10,4 +10,4 @@ Containes DBMS assignments
 Containes Java assignments
 
 ### QA branch
-Contains software testing related assignments
+Contains software testing assignments
