@@ -8,3 +8,6 @@ Containes DBMS assignments
 
 ### backend branch
 Containes Java assignments
+
+### QA branch
+Contains software testing related assignments
