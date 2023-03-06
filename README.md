@@ -11,3 +11,6 @@ Containes Java assignments
 
 ### QA branch
 Contains software testing assignments
+
+### Project-1 branch
+Contains parking management project files
