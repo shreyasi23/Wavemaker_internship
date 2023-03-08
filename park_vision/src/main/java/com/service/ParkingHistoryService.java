@@ -9,7 +9,7 @@ public interface ParkingHistoryService {
 
     ParkingHistory recordParkingInfo(ParkingHistory parkingHistory);
 
-    ParkingHistory getHistory(String license_plate_no);
+    List<ParkingHistory> getHistory(String license_plate_no);
 
     ParkingHistory updateParkingRecord(ParkingHistory parkingHistory);
 }

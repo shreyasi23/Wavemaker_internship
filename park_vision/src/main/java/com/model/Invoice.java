@@ -1,7 +1,8 @@
 package com.model;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
+
 
 @Entity
 @Table(name = "invoice")
@@ -37,6 +38,7 @@ public class Invoice {
     }
 
     public void setInvDate(Date invDate) {
+
         this.invDate = invDate;
     }
 

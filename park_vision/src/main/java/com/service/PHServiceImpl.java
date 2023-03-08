@@ -4,6 +4,8 @@ import com.model.ParkingHistory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,13 +37,15 @@ public class PHServiceImpl implements ParkingHistoryService{
     }
 
     @Override
-    public ParkingHistory getHistory(String license_plate_no){
+    public List<ParkingHistory> getHistory(String license_plate_no){
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        ParkingHistory parkingHistory = session.get(ParkingHistory.class, license_plate_no);
+        NativeQuery<ParkingHistory> nativeQuery = session.createNativeQuery("select * from parking_history where license_plate_no=:licenseId", ParkingHistory.class);
+        nativeQuery.setParameter("licenseId",license_plate_no);
+        List list = nativeQuery.list();
         transaction.commit();
         session.close();
-        return parkingHistory;
+        return list;
     }
 
     @Override

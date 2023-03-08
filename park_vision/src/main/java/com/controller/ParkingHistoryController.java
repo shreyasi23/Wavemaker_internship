@@ -30,7 +30,7 @@ public class ParkingHistoryController {
     }
 
     @GetMapping("/{license_plate_no}")
-    public ParkingHistory getHistory(@PathVariable("license_plate_no") String license_plate_no){
+    public List<ParkingHistory> getHistory(@PathVariable("license_plate_no") String license_plate_no){
         logger.info("getHistory is invoked with license plate number: {}",license_plate_no);
         return parkingHistoryService.getHistory(license_plate_no);
     }
