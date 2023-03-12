@@ -1,6 +1,5 @@
 package com.controller;
 
-import com.model.Invoice;
 import com.model.ParkingSlots;
 import com.service.ParkingSlotsService;
 import org.slf4j.Logger;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value = "/parking-slots")
 public class PSController {
     @Autowired
@@ -23,13 +23,13 @@ public class PSController {
         return parkingSlotsService.getParkingSlots();
     }
 
-    @GetMapping("/{id}")
-    public ParkingSlots getSlot(@PathVariable("id") String id){
-        logger.info("getSlot is invoked with slot ID: {}",id);
-        return parkingSlotsService.getSlot(id);
+    @GetMapping("/{vehicle_type}")
+    public List<String> getFreeSlots(@PathVariable("vehicle_type") int vehicle_type){
+        logger.info("getFreeSlots is invoked with vehicle type: {}",vehicle_type);
+        return parkingSlotsService.getFreeSlots(vehicle_type);
     }
 
-    @PutMapping("/update-status")
+    @PutMapping("/{slot}")
     public ParkingSlots updateSlotStatus(@RequestBody ParkingSlots parkingSlots){
         return parkingSlotsService.updateSlotStatus(parkingSlots);
     }

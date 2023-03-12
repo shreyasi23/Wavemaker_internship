@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value = "/parking-history")
 public class ParkingHistoryController {
     @Autowired
@@ -23,6 +24,7 @@ public class ParkingHistoryController {
         return parkingHistoryService.getParkingHistory();
     }
 
+
     @PostMapping("/record-parking")
     public ParkingHistory recordParkingInfo(@RequestBody ParkingHistory parkingHistory){
         logger.info("record parking info is invoked {}",parkingHistory);
@@ -35,8 +37,4 @@ public class ParkingHistoryController {
         return parkingHistoryService.getHistory(license_plate_no);
     }
 
-    @PutMapping("/update-parking-rec")
-    public ParkingHistory updateParkingRecord(@RequestBody ParkingHistory parkingHistory){
-        return parkingHistoryService.updateParkingRecord(parkingHistory);
-    }
 }

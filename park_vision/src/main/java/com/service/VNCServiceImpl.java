@@ -1,6 +1,5 @@
 package com.service;
 
-import com.model.ParkingSlots;
 import com.model.VehicleNameCode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

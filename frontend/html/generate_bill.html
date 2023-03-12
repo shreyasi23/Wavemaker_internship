@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Park Visison|generate bill</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/occupied_slots_Style.css">
+    <link rel="stylesheet" href="../css/generate_bill_Style.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="../images/Park Vision_bg.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page content section -->
+    <div id="gb_page_content">
+        <!-- heading -->
+        <div id="gb_page_heading">
+            <h2 class="heading_style"><strong>Generate Bill</strong></h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- form -->
+                    <div id="form_cont">
+                        <form id="form_align" class="form">
+                            <span class="form_fields" id="vehicleMakeBlock">
+                                <label for="liscensePlateNo">License plate number</label>
+                                <input type="text" id="vName" name="vehilcleNo">
+                            </span>
+                            <input class="btn btn-default btn_style2" id= "generateBill" type="submit" value="Generate Bill">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- bill section -->
+                <div class="col-md-5">
+                    <div id="bill_section">
+                        <div id="bill_box">
+                            <button id="print_button" onclick="printBill()">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+                            </button>
+                            <div id="bill_body">
+                                <p>Generated bill will appear here</p>
+                            </div>
+                        </div>
+                        <!-- back todashboard button -->
+                        <div id="back_btn">
+                            <a href="./index.html"><button class="btn btn-default btn_style2 btn_style">Back to Dashboard</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/generate_bill_logic.js"></script>
+</body>
+
+</html>

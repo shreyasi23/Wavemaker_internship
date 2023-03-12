@@ -4,6 +4,7 @@ import com.model.ParkingSlots;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,13 +26,17 @@ public class PSServiceImpl implements ParkingSlotsService{
     }
 
     @Override
-    public ParkingSlots getSlot(String slot_no){
+    public List getFreeSlots(int vehicle_type){
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        ParkingSlots parkingSlots = session.get(ParkingSlots.class, slot_no);
+        NativeQuery nativeQuery = session.createNativeQuery("select slot_no from parking_slots where vehicle_type=:wheeler and is_empty=true");
+        nativeQuery.setParameter("wheeler",vehicle_type);
+        List freeSlots = nativeQuery.list();
         transaction.commit();
         session.close();
-        return parkingSlots;
+        return freeSlots;
+
+
     }
 
     @Override

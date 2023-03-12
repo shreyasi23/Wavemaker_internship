@@ -18,11 +18,6 @@ public class ParkingSlots {
     @Column(name = "is_empty")
     private boolean is_empty;
 
-//    public ParkingSlots() {
-//        this.slotNo = "A-00";
-//        this.vehicleType = 4;
-//        this.is_empty = true;
-//    }
 
     public String getSlotNo() {
         return slotNo;

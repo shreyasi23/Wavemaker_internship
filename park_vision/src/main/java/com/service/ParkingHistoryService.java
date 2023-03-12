@@ -11,5 +11,5 @@ public interface ParkingHistoryService {
 
     List<ParkingHistory> getHistory(String license_plate_no);
 
-    ParkingHistory updateParkingRecord(ParkingHistory parkingHistory);
+    List<ParkingHistory> getPRWheelerWise(int vehicle_type);
 }

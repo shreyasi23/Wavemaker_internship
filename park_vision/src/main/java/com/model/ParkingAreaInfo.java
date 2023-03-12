@@ -22,12 +22,6 @@ public class ParkingAreaInfo {
     @Column(name = "per_hr_charge")
     private int perHrCharge;
 
-//    public ParkingAreaInfo() {
-//        this.PAI_ID = "PI0";
-//        this.noOfSolts = 10;
-//        this.basePrice = 20;
-//        this.perHrCharge = 10;
-//    }
 
     public String getPAI_ID() {
         return PAI_ID;

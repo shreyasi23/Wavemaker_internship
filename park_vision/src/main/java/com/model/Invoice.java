@@ -1,19 +1,15 @@
 package com.model;
 
 import javax.persistence.*;
-import java.util.Date;
+
 
 
 @Entity
 @Table(name = "invoice")
 public class Invoice {
-
     @Id
     @Column(name = "id")
-    private String invoiceID;
-
-    @Column(name = "inv_date")
-    private Date invDate;
+    private int invoiceID;
 
     @Column(name = "parking_id")
     private String parkingID;
@@ -21,25 +17,13 @@ public class Invoice {
     @Column(name = "amount_paid")
     private int amountPaid;
 
-//    public Invoice() {
-//
-//    }
 
-    public String getInvoiceID() {
+    public int getInvoiceID() {
         return invoiceID;
     }
 
-    public void setInvoiceID(String invoiceID) {
+    public void setInvoiceID(int invoiceID) {
         this.invoiceID = invoiceID;
-    }
-
-    public Date getInvDate() {
-        return invDate;
-    }
-
-    public void setInvDate(Date invDate) {
-
-        this.invDate = invDate;
     }
 
     public String getParkingID() {
@@ -62,9 +46,8 @@ public class Invoice {
     public String toString() {
         return "Invoice{" +
                 "invoiceID='" + invoiceID + '\'' +
-                ", invDate=" + invDate +
                 ", parkingID='" + parkingID + '\'' +
-                ", amountPaid='" + amountPaid + '\'' +
+                ", amountPaid=" + amountPaid +
                 '}';
     }
 }

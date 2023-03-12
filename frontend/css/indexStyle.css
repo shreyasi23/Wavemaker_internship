@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #303133;
+}
+
+/* navbar style */
+nav{
+    color: white;
+}
+
+nav img{
+    height: 33px;
+    width: 157px;
+}
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.navbar-header{
+    width: 100%;
+}
+
+.navbar-brand{
+    padding: 9px 0px;
+}
+
+.navbar-default {
+    background-color: #195197;
+    border-color: #195197;
+}
+
+#dateBlock{
+    margin-top: 22px;
+    text-align: right;
+}
+
+#logout_btn{
+    margin-top: 10px;
+}
+
+.btn-default {
+    color: white !important;
+    background-color: #45AAF4 !important;
+    border-color: #45AAF4 !important;
+}
+
+.btn-default:hover{
+    background-color: #4cb4ff !important;
+}
+
+#logoutBtnCont{
+    padding-left: 0px;
+}
+
+/* dashboard left section style */
+#availability_section{
+    background-color: #e8f4fd;
+    height: 100vh;
+}
+
+.db_section_style{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#empty_slot_count{
+    display: flex;
+    justify-content: space-between;
+    width: 23rem;
+    margin-top: 4rem;
+}
+
+
+#btn_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23rem;
+    margin-top: 3rem;
+    height: 8rem;
+}
+
+.empty_slot_info{
+    border: 2px solid #195197;
+    border-radius: 4px;
+    height: 105px;
+    width: 105px;
+}
+
+.esi_1{
+    background-color: #195197;
+    color: white;
+    text-align: center;
+    height: 3.5rem;
+}
+
+.esi_1 p{
+    padding-top: 7px;
+}
+
+.esi_2{
+    background-color: white;
+    height: 6.5rem;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.esi_2 p{
+    padding-top: 1.2rem;
+}
+
+.heading_style{
+    color:#195197;
+}
+
+.l_dashb_btn{
+    background-color: #195197 !important;
+    border-color: #195197 !important;
+    width:23rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+.l_dashb_btn:hover{
+    background-color: #1e5faf !important;
+}
+
+
+/* dashboard right section style */
+#form_container{
+    margin-top: 3rem;
+    width: 60rem;
+}
+
+#form_container form label{
+    display: block;
+}
+
+#form_container form input{
+    width: 27rem;
+}
+
+.subheading_style{
+    color:#45AAF4;
+    margin-left: 2rem;
+}
+
+.gap_subH_fields{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.form_fields{
+    width: 26rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+#subheading2{
+    margin-top: 4rem;
+}
+
+#entryTime{
+    width: 11rem !important;
+}
+
+#vType{
+    width: 7rem;
+    text-align: center;
+}
+
+#field_gap{
+    margin-top: 2rem;
+}
+
+.submit_btn{
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
+
+
+

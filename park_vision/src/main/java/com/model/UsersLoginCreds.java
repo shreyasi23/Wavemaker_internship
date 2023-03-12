@@ -18,9 +18,6 @@ public class UsersLoginCreds {
     @Column(name = "pswd")
     private String password;
 
-//    public UsersLoginCreds() {
-//
-//    }
 
     public String getUserID() {
         return userID;
