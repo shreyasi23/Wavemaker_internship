@@ -2,9 +2,8 @@
 
 ### About Project:
 
-The parking management system aims to ease parking slot management and billing. This system will help parking area staff effortlessly locate empty parking
-spaces in the lot and assign that space to the incoming vehicle. This system willalso track the number of hours that vehicle was parked and generate the bill
-accordingly.
+The parking management system aims to ease parking slot management and billing. This system will help parking area staff effortlessly allocate empty parking
+space to the incoming vehicle and generate the bill.
 
 ### Modules:
 
